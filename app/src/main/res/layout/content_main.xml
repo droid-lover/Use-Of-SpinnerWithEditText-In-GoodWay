@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bmsils.spinnerwithedittextgoodway.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <View
+        android:id="@+id/requestesSuccessView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp" />
+
+
+    <TextView
+        android:id="@+id/topicNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="fantasy"
+        android:text="TOPIC NAME"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/topicSpinner"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner_dropdown_layout"
+        android:fontFamily="chiller" />
+
+    <TextView
+        android:id="@+id/topicNotesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="fantasy"
+        android:text="DETAIL NOTE"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/topicNotesEditText"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_rectangle"
+        android:fontFamily="fantasy"
+        android:gravity="top"
+        android:hint="ENTER A NOTE"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/publishTopicStoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="Publish Story"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <View
+        android:id="@+id/snackBarView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp" />
+
+</LinearLayout>
